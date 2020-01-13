@@ -19,18 +19,13 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
-\usepackage{lastpage}
-\usepackage{trkchg}
-\usepackage{engord}
+% \documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\documentclass[letterpaper]{radler-resume-class}
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
-
-%\lastupdated % Print the Last Updated text at the top right
 
 \namesection{Joseph James}{Radler}{ % Your name
 \href{mailto:joseph.james.radler@gmail.com}{joseph.james.radler@gmail.com} | 765.412.4864 \\% Your contact information
@@ -43,19 +38,12 @@
 \vspace{0pt}
 \begin{minipage}[t]{0.32\textwidth} % The left column takes up 33% of the text width of the page
 
-%%------------------------------------------------
-%%Contact &  Links
-%%------------------------------------------------
-%\section{Links} 
-%Github:// \href{https://github.com/jjradler}{\bf jjradler} \\
-%LinkedIn:// \href{https://www.linkedin.com/in/jjradler/}{\bf jjradler} \\
-%Webpage:// \href{http://jjradler.github.io}{\bf jjradler.github.io}
-
 %------------------------------------------------
 % Education
 %------------------------------------------------
 
 \section{Education} 
+\sectionspace
 \subsection{Univ. of Washington}
 \descript{Master of Science (MS)}
 \location{June 2018 | Seattle, WA}
@@ -77,33 +65,15 @@ Minor \textbf{Japanese Language}
 \descript{Associate of Applied Science (AAS)}
 \location{Dec. 2010 | Lafayette, IN}
 Major \textbf{Chemical Technology}
-
+\sectionspace
 %------------------------------------------------
 % Skills 1
 %------------------------------------------------
-
 \section{Skills}
-%\subsection{Quantitative}
-%\textbf{Data:}	Analysis \textbullet{} Experiment Design\\
-%Data Management \textbullet{} Statistics\\
-%Time-Frequency Analysis \textbullet{} Visualization\\
-%\textbf{Mathematics:}	Discrete Mathematics\\
-%Group Theory \textbullet{} Linear Algebra\\
-%Numerical Analysis \textbullet{} Vector Calculus
-
-%%------------------------------------------------
-%% Communicaiton
-%%------------------------------------------------
-%\subsection{Communication}
-%Technical Writing \textbullet{} Editing\\
-%Visualizations \textbullet{} Developing Tutorials\\
-%Publishing \textbullet{} Poster \& Oral Presentation
-%
-%\sectionspace
-
 %------------------------------------------------
 % Scientific Computing
 %------------------------------------------------
+\sectionspace
 \subsection{Scientific Computing}
 Numerical Modeling\textbullet{}Simulation Design\\
 \textbullet{}Open Source Development\\
@@ -121,8 +91,7 @@ Numerical Modeling\textbullet{}Simulation Design\\
 
 \sectionspace
 
-\subsection{Quantitative:}
-\textbf{Mathematics:}
+\subsection{Quantitative}
 \textbullet{}Discrete Mathematics\textbullet{}Group Theory
 \textbullet{}Differential Equations\textbullet{}Linear Algebra
 \textbullet{}Complex Analysis\textbullet{}Numerical Analysis
@@ -140,15 +109,6 @@ Numerical Modeling\textbullet{}Simulation Design\\
 \textbf{Proficient:} Windows \textbullet{} MacOS\\
 \textbf{Familiar:} Linux (Fedora, Debian \& Ubuntu)
 
-%%------------------------------------------------
-%% Languages
-%%------------------------------------------------
-%\subsection{Natural Languages}
-%%\sectionspace
-%\textbf{Native or Fluent:}	English\textbullet{}Japanese\\
-%\textbf{Proficient:}	French\textbullet{}Portuguese\textbullet{}Spanish\\
-%\textbf{Limited:}		German\textbullet{}Mandarin\textbullet{}Russian
-
 \end{minipage} % The end of the left column
 %
 %----------------------------------------------------------------------------------------
@@ -164,8 +124,10 @@ Numerical Modeling\textbullet{}Simulation Design\\
 
 \section{Relevant Work \& Research Experience}
 
+\sectionspace
+
 \subsection{Induced Polarization Associates, LLC | Seattle, WA}
-\descript{Marine Induced Polarization Development Research Associate}
+\descript{Marine Induced Polarization Development Sr. Research Scientist}
 \location{May 2019 - Present}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
@@ -180,53 +142,27 @@ Numerical Modeling\textbullet{}Simulation Design\\
 \sectionspace 
 
 \subsection{University of Washington | Seattle, WA}
-%\descript{Graduate Teaching Assistant / Associate | General Chemistry\\
-%Department of Chemistry}
-%\location{Sept. 2015 - Mar. 2019}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\begin{tightitemize}
-%\item Taught students the theoretical and technical aspects of chemistry.
-%\item Conveyed abstract concepts from physics in introductory-level chemistry courses.
-%\item Led and advised other Graduate Teaching Assistants as a Mentor.
-%\item Instructed First Year Graduate students at a Teaching Assistant Orientation seminar.
-%\end{tightitemize}
-%\sectionspace 
-
 \descript{Research Assistant | Xiaosong Li Group\\
 Department of Chemistry}
 \location{Jan 2016 - Sept. 2018}
 \begin{tightitemize}
-% TODO: Expand a bit more on the quantum dynamics development. 
 \item Wrote and published \textit{three (3) original research articles} on simulating coupled quantum dynamics in peer-reviewed journals (pleaser see Publications section below).
 \item Collaborated with researchers from various experimental disciplines. 
 \item Constructed a novel computational approach to treating fast intersystem crossings with Time-Dependent Density Functional Theory (TD-DFT).
 \item Developed high-performance computing pipelines, data analysis, and simulation software tools. 
 \item Worked on a development team for an Open Source simulation application. 
-%\item Wrote, edited, and created visualizations for a national research center grant application
-%\item Troubleshot complicated, interlocked assemblies of software, theoretical models, and data analysis techniques.
 \item Created visualizations for time-resolved frequency analysis.
 \item Automated parsing and analysis of large data sets from simulations.
 \item Presented my original work in both small-group settings and public seminars.
-\item Designed, typeset, and presented award-winning posters for conference presentations. 
-
+\item Designed, typeset, and presented award-winning posters for conferences. 
 \end{tightitemize}
 \sectionspace % Some whitespace after the section
-
-%\subsection{Purdue Rare Isotope Measurement (PRIME) Laboratory}
-%\descript{Chemist | Geological Sample Processing Chemistry Operations}
-%\location{May 2012 - Aug 2015 | West Lafayette, IN}
-%\begin{tightitemize}
-%\item Processed soil, rock, and water samples for \textsuperscript{36}Cl analysis by Accelerator Mass Spectrometry.
-%\item Optimized sample processing, tripling sample throughput.
-%\item Re-engineered document workflows and maintained records for the database.
-%\item Wrote and revised sample processing documentation and procedures.
-%\item Collaborated remotely with researchers to advise them with their own processing facilities.
-%\end{tightitemize}
 
 %------------------------------------------------
 %  Publications
 %------------------------------------------------
 \section{Publications}
+\sectionspace
 \begin{itemize}
 \item Valentine, A. J. S.; \textbf{Radler, J. J.}; Mills, A.; Kim, P.; Castellano, F. N.; Chen, L. X.; and Li, X.;	\textit{Resolving the ultrafast intersystem crossing in a bimetallic platinum complex}. J. Chem. Phys., \textbf{2019}. \href{https://doi.org/10.1063/1.5115169}{\textit{DOI: }10.1063/1.5115169}
 
@@ -235,7 +171,6 @@ Department of Chemistry}
 \item Lingerfelt, D. B.; Lestrange, P. J.; \textbf{Radler, J. J.}; Brown-Xu, S. E.; Kim, P.; Castellano, F. N.; Chen, L. X.; Li, X.;	\textit{Can Excited State Electronic Coherence Be Tuned via Molecular Structural Modification? A First-Principles Quantum Electronic Dynamics Study of Pyrazolate-Bridged Pt(II) Dimers}.
 J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpca.6b12099}{\textit{DOI:} 10.1021/acs.jpca.6b12099}
 \end{itemize}
-
 
 \end{minipage} % The end of the right column
 
@@ -249,11 +184,9 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-%\lastupdated % Print the Last Updated text at the top right
-
 \namesection{Joseph James}{Radler}{ % Your name
 \href{mailto:joseph.james.radler@gmail.com}{joseph.james.radler@gmail.com} | 765.412.4864 \\% Your contact information
-2800 Franklin Ave E. \#17, Seattle WA, 98102 % Physical Address
+2800 Franklin Ave E. \#17, Seattle WA, 98102 % Your website, LinkedIn profile or other web address
 }
 
 %----------------------------------------------------------------------------------------
@@ -266,13 +199,13 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 % Coursework
 %------------------------------------------------
 \section{Relevant Courses}
-\subsection{Chemistry \& Physics}
 \sectionspace
-%\textbf{Purdue University:}\\
+\subsection{Chemistry \& Physics}
+
 \textbullet{}Computational Molecular Dynamics\\
 \textbullet{}Quantum Computational Chemistry\\
 \textbullet{}Group Theory for Physical Chemistry\\
-%\textbf{University of Washington:}\\
+
 \textbullet{}Advanced Inorganic Chemistry\\
 \textbullet{}Computational Chemistry\\
 \textbullet{}Quantum Chemistry I\\
@@ -281,7 +214,6 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 \sectionspace
 
 \subsection{Mathematics}
-\sectionspace
 \textbullet{}Numerical Linear Algebra\\
 \textbullet{}Computational Data Analysis\\
 \textbullet{}Ordinary Differential Equations\\
@@ -290,7 +222,6 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 \sectionspace
 
 \subsection{Computer Programming}
-\sectionspace
 \textbullet{}High-Performance Computing\\
 \textbullet{}C Programming\\
 \textbullet{}Intro Engineering with MATLAB\\
@@ -304,28 +235,20 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 \textbullet{}English Composition\\
 \textbullet{}Japanese Language \& Literature
 
+\sectionspace
+
 %------------------------------------------------
 % Professional Skills
 %------------------------------------------------
+
 \section{Other Skills}
+
 \sectionspace
-%%------------------------------------------------
-%% Communicaiton
-%%------------------------------------------------
-%\subsection{Communication}
-%\sectionspace
-%Laboratory Instruction \textbullet{} Lecturing\\
-%Mentoring \textbullet{} Safety Training\\
-%Developing \& Delivering Tutorials\\
-%Poster \& Oral Presentation\\
-%Technical Writing \textbullet{} Editing\\
-%Publishing \textbullet{} Website Construction 
 
 %------------------------------------------------
 % Languages
 %------------------------------------------------
 \subsection{Natural Languages}
-\sectionspace
 \textbf{Native or Fluent:}\\English\textbullet{}Japanese\\
 \textbf{Conversational:} \\French\textbullet{}Portuguese\textbullet{}Russian\textbullet{}Spanish\\
 \textbf{Basic:}\\German\textbullet{}Mandarin
@@ -333,10 +256,9 @@ J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpc
 \sectionspace
 
 %------------------------------------------------
-% Communicaiton
+% COMMUNICATION
 %------------------------------------------------
 \subsection{Communication}
-\sectionspace
 Technical Writing \textbullet{} Editing\\
 Visualizations \textbullet{} Developing Tutorials\\
 Publishing \textbullet{} Poster \& Oral Presentation
@@ -347,35 +269,25 @@ Publishing \textbullet{} Poster \& Oral Presentation
 %Contact &  Links
 %------------------------------------------------
 \section{Links} 
+\sectionspace
 Github:// \href{https://github.com/jjradler}{\bf jjradler} \\
 LinkedIn:// \href{https://www.linkedin.com/in/jjradler/}{\bf jjradler} \\
 Webpage:// \href{http://jjradler.github.io}{\bf jjradler.github.io}
 
-\end{minipage} % The end of the left column%
-%\hfill
-\vspace{0pt}
+\end{minipage} % The end of the left column
+%
 %----------------------------------------------------------------------------------------
 %	RIGHT COLUMN
 %----------------------------------------------------------------------------------------
+%
+\vspace{0pt}
 \begin{minipage}[t]{0.65\textwidth} % The right column takes up 66% of the text width of the page
 
-%%------------------------------------------------
-%%  Publications
-%%------------------------------------------------
-%\section{Publications}
-%\begin{itemize}
-%\item Valentine, A. J. S.; \textbf{Radler, J. J.}; Mills, A.; Kim, P.; Castellano, F. N.; Chen, L. X.; and Li, X.;	\textit{Resolving the ultrafast intersystem crossing in a bimetallic platinum complex}. J. Chem. Phys., \textbf{2019}. \href{https://doi.org/10.1063/1.5115169}{\textit{DOI: }10.1063/1.5115169}
-%
-%\item \textbf{Radler, J. J.}; Lingerfelt, D. B.; Castellano, F. N.; Chen, L. X.; Li, X.;	\textit{Role of Vibrational Dynamics on Excited-State Electronic Coherence in a Binuclear Platinum Complex} (Featured Cover Article) J. Phys. Chem. A, \textbf{2018}. \href{https://pubs.acs.org/doi/10.1021/acs.jpca.8b01352}{\textit{DOI:} 10.1021/acs.jpca.8b01352}
-%
-%\item Lingerfelt, D. B.; Lestrange, P. J.; \textbf{Radler, J. J.}; Brown-Xu, S. E.; Kim, P.; Castellano, F. N.; Chen, L. X.; Li, X.;	\textit{Can Excited State Electronic Coherence Be Tuned via Molecular Structural Modification? A First-Principles Quantum Electronic Dynamics Study of Pyrazolate-Bridged Pt(II) Dimers}.
-%J. Phys. Chem. A., \textbf{2017}. \href{https://pubs.acs.org/doi/10.1021/acs.jpca.6b12099}{\textit{DOI:} 10.1021/acs.jpca.6b12099}
-%\end{itemize}
 
 %------------------------------------------------
 % Presentations
 %------------------------------------------------
-\section{Poster Presentations}
+\section{Selected Poster Presentations}
 \begin{itemize}
 \item \textbf{Radler, J. J.}; Lingerfelt, D. B.; Li, X.; \emph{Cascading into Coherence -- Theoretical Investigations of Long-Lived Excited State Coherences in Bimetallic Pt(II) Complexes}. Conference on Excited State Processes (ESP 2018);	\textbf{\textit{06/2018}}.
 
@@ -388,7 +300,9 @@ Webpage:// \href{http://jjradler.github.io}{\bf jjradler.github.io}
 \item \textbf{Radler, J. J.}; Schauer, D. J.; \emph{Probing the Nature of Metal-Phosphonate Interactions by FTIR Spectroscopy}, Central Regional Meeting of the ACS;	\textbf{\textit{06/2010}}.
 \end{itemize}
 
+
 \section{Other Work Experience}
+\sectionspace
 \subsection{University of Washington | Seattle, WA}
 \descript{Graduate Teaching Assistant / Associate | General Chemistry\\
 Department of Chemistry}
@@ -411,6 +325,7 @@ Department of Chemistry}
 \item Wrote and revised sample processing documentation and procedures.
 \item Collaborated remotely with researchers to advise them with their own processing facilities.
 \end{tightitemize}
+
 
 %%------------------------------------------------
 %%  CERTIFICATIONS
@@ -448,7 +363,6 @@ Department of Chemistry}
 \item \textbf{2016} UW High-Performance Computing Club (UW-HPCC)
 \item \textbf{2006} Alpha Chi Sigma Beta Nu Chapter
 \end{tightitemize}
-\end{minipage} % The end of the right column
-%----------------------------------------------------------------------------------------
 
+\end{minipage} % The end of the right column
 \end{document}

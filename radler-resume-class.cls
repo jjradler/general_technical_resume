@@ -5,7 +5,7 @@
 %	CLASS OPTIONS AND REQUIRED PACKAGES
 %----------------------------------------------------------------------------------------
 
-\ProvidesClass{deedy-resume}[2014/04/30 CV class]
+\ProvidesClass{radler-resume-class}[2020/01/13 Resume Class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
@@ -13,6 +13,32 @@
 
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+
+%--------------------------------------------------------------------------------------------
+%	PAGE NUMBERING
+%--------------------------------------------------------------------------------------------
+
+
+\pagestyle{fancy}
+%\fancyhf{}
+%
+\footskip = 1pt
+\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+% comment out what you don't want
+%\lhead{}
+%\chead{}
+%\rhead{\textbf{The performance of new graduates}}
+%\lfoot{From: K. Grant}
+%\cfoot{\thepage \hspace{1pt} of \pageref{LastPage}}
+%\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
 
 %----------------------------------------------------------------------------------------
 %	COLORS
@@ -39,16 +65,16 @@
 %	LAST UPDATED COMMAND
 %----------------------------------------------------------------------------------------
 
-\usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
-\usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
-
-\setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
-\setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
-\newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-Last Updated on \today % Last Updated text
-\end{textblock}}
+%\usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
+%\usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
+%
+%\setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
+%\setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
+%\newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
+%\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+%\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
+%Last Updated on \today % Last Updated text
+%\end{textblock}}
 
 %----------------------------------------------------------------------------------------
 %	MAIN HEADING COMMAND
@@ -56,7 +82,7 @@ Last Updated on \today % Last Updated text
 
 \newcommand{\namesection}[3]{ % Defines the command for the main heading
 \centering{ % Center the name
-\fontsize{40pt}{60pt} % Font size
+\fontsize{32pt}{42pt} % Font size
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 % First name font
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2 % Last name font
 } \\[5pt] % Whitespace between the name and contact information
